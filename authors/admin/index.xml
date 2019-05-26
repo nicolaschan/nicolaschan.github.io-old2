@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nicolas Chan</title>
+    <link>/authors/admin/</link>
+    <description>Recent content on Nicolas Chan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>I’m currently an operations intern at Berkeley Research Computing, developing tools for and assisting researchers with supercomputing in close affiliation with the Lawrence Berkeley National Lab HPCS team.
+Previously, I worked for SGT as a contractor at NASA Ames Research Center, working on the Mission Tools Suite to support the airborne science program.
+In 2015, I was part of the educational associates program by USRA, also at NASA Ames, primarily working on user interface design for a winter weather dashboard for airline dispatchers.</description>
+    </item>
+    
+  </channel>
+</rss>

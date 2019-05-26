@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Nicolas Chan</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Nicolas Chan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 May 2019 19:57:36 -0700</lastBuildDate>
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mines</title>
+      <link>/project/mines/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/mines/</guid>
+      <description>Multiplayer minesweeper in your web browser</description>
+    </item>
+    
+    <item>
+      <title>bofhbot</title>
+      <link>/project/bofhbot/</link>
+      <pubDate>Sat, 25 May 2019 19:55:50 -0700</pubDate>
+      
+      <guid>/project/bofhbot/</guid>
+      <description>A tool for lazy sysadmins</description>
+    </item>
+    
+    <item>
+      <title>bell.plus</title>
+      <link>/project/bell/</link>
+      <pubDate>Sat, 25 May 2019 19:54:04 -0700</pubDate>
+      
+      <guid>/project/bell/</guid>
+      <description>Countdown to when the bell rings at school</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nicolas Chan</title>
+    <link>/</link>
+    <description>Recent content on Nicolas Chan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 May 2019 20:00:51 -0700</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating bell.plus</title>
+      <link>/post/bell/</link>
+      <pubDate>Sat, 25 May 2019 20:00:51 -0700</pubDate>
+      
+      <guid>/post/bell/</guid>
+      <description>
+
+&lt;p&gt;You&amp;rsquo;d think a countdown timer to the end of class would be an easy one-day
+project. I thought so too, but it ended up dominating my free time during
+my senior year of high school.&lt;/p&gt;
+
+&lt;p&gt;It began as many good projects do &amp;ndash; I was feeling a bit lazy. My high
+school&amp;rsquo;s schedule changed frequently depending on the day of the week,
+and I rarely knew exactly when the bell was supposed to ring. Rather
+than wait for the oh-so-slow school website to load to look up the
+schedule, I decided to make a website to do the work for me. Having
+recently implemented a policy of providing Chromebooks to all students,
+my high school was the perfect place for a project like this to take off,
+although I didn&amp;rsquo;t realize it at the time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/bell-screenshot.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;what-s-so-hard-about-this&#34;&gt;What&amp;rsquo;s so hard about this?&lt;/h1&gt;
+
+&lt;p&gt;It&amp;rsquo;s just a timer, right?&lt;/p&gt;
+
+&lt;h2 id=&#34;dealing-with-special-schedules&#34;&gt;Dealing with Special Schedules&lt;/h2&gt;
+
+&lt;p&gt;Well, a timer needs to know when the end time is, and this was simple enough
+to hard-code. But as time went on and I started encountering special schedules,
+I decided to go a bit overboard and write a parser
+for my own format for specifying school schedules and calendars. Later on,
+this would pay off when I wanted to quickly add support for additional
+schools. It also features a way to enter custom schedules if your
+school isn&amp;rsquo;t supported.&lt;/p&gt;
+
+&lt;h2 id=&#34;precise-timing&#34;&gt;Precise Timing&lt;/h2&gt;
+
+&lt;p&gt;I suppose I was also a bit of a perfectionist, wanting it to tick over to
+the next period &lt;em&gt;exactly&lt;/em&gt; when the bell rings. On devices where the system
+time might be slightly incorrect, this required time synchronization with
+the server. This revealed to me that even the &lt;em&gt;school&amp;rsquo;s&lt;/em&gt; time was wrong and
+would even vary depending on the day. I hacked together a Telegram bot I could
+send messages to like &lt;code&gt;bell add 1000&lt;/code&gt; to push the website 1000 ms forward
+to match the school.&lt;/p&gt;
+
+&lt;h2 id=&#34;feature-creep&#34;&gt;Feature Creep&lt;/h2&gt;
+
+&lt;p&gt;Inevitably, people want more features. I added support for custom themes
+in a way that would make it easy to implement new ones while still
+being extensible enough to support things such as a special snow effect
+during winter break.&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Jonathan Shi contributed by creating &lt;a href=&#34;https://bell.plus/xt&#34; target=&#34;_blank&#34;&gt;the Chrome
+extension&lt;/a&gt; as part of his senior project in high school.&lt;/p&gt;
+
+&lt;p&gt;After I went off to college, Jamsheed Mistri helped to keep the schedules
+updated and we worked together on creating some stickers to promote the website.&lt;/p&gt;
+
+&lt;h1 id=&#34;analytics&#34;&gt;Analytics&lt;/h1&gt;
+
+&lt;p&gt;What I thought would be a useful tool for myself quickly became popular at
+the school, and was even requested at other schools. Feedback from from a
+survey I sent out was overwhelmingly positive (1 = Not useful at all, 5 = Extremely useful):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/bell-survey.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After starting college and no longer being on the ground seeing it being used
+in high school, I wanted to keep an eye on the usage. I created my own analytics
+stack to avoid dependence on any external services. I put my newly learned SQL
+programming skills to use when setting up &lt;a href=&#34;https://bell.plus/stats&#34; target=&#34;_blank&#34;&gt;the stats page&lt;/a&gt;
+using &lt;a href=&#34;https://metabase.com&#34; target=&#34;_blank&#34;&gt;Metabase&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/bell-stats.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://bell.plus/stats&#34; target=&#34;_blank&#34;&gt;public stats page&lt;/a&gt; includes many more charts of the
+data collected, including usage by school and over the course of a day.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;Creating bell.plus has been one of the greatest learning experiences for me, because I was
+ultimately responsible for setting it up and making sure everything continued
+working well. From programming the front and backends, maintaining uptime with Docker
+swarm, and performing analysis on the usage information, it has required me to
+attain at least a working familiarity with all parts of the software deployment process.
+If you&amp;rsquo;re interested in the specific technologies I&amp;rsquo;ve used, bell.plus is &lt;a href=&#34;https://github.com/nicolaschan/bell&#34; target=&#34;_blank&#34;&gt;open source and
+available on GitHub&lt;/a&gt;.
+Its usefulness to other students at my former high school continues to humble me and
+encourage me to keep it going strong for the years to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>mines</title>
+      <link>/project/mines/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/mines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bofhbot</title>
+      <link>/project/bofhbot/</link>
+      <pubDate>Sat, 25 May 2019 19:55:50 -0700</pubDate>
+      
+      <guid>/project/bofhbot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bell.plus</title>
+      <link>/project/bell/</link>
+      <pubDate>Sat, 25 May 2019 19:54:04 -0700</pubDate>
+      
+      <guid>/project/bell/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

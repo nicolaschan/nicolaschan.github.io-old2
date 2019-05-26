@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nicolas Chan</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Nicolas Chan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 May 2019 20:00:51 -0700</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating bell.plus</title>
+      <link>/post/bell/</link>
+      <pubDate>Sat, 25 May 2019 20:00:51 -0700</pubDate>
+      
+      <guid>/post/bell/</guid>
+      <description>You&amp;rsquo;d think a countdown timer to the end of class would be an easy one-day project. I thought so too, but it ended up dominating my free time during my senior year of high school.
+It began as many good projects do &amp;ndash; I was feeling a bit lazy. My high school&amp;rsquo;s schedule changed frequently depending on the day of the week, and I rarely knew exactly when the bell was supposed to ring.</description>
+    </item>
+    
+  </channel>
+</rss>
