@@ -27,11 +27,10 @@
   
     
   
-  <meta name="description" content="You&rsquo;d think a countdown timer to the end of class would be an easy one-day project. I thought so too, but it ended up dominating my free time during my senior year of high school.
-It began as many good projects do &ndash; I was feeling a bit lazy. My high school&rsquo;s schedule changed frequently depending on the day of the week, and I rarely knew exactly when the bell was supposed to ring.">
+  <meta name="description" content="Mithril select component with auto-complete as you type">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/bell/">
+  <link rel="alternate" hreflang="en-us" href="/project/mithril-selector/">
 
   
 
@@ -96,7 +95,7 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/bell/">
+  <link rel="canonical" href="/project/mithril-selector/">
 
   
   
@@ -108,22 +107,21 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Nicolas Chan">
-  <meta property="og:url" content="/post/bell/">
-  <meta property="og:title" content="Creating bell.plus | Nicolas Chan">
-  <meta property="og:description" content="You&rsquo;d think a countdown timer to the end of class would be an easy one-day project. I thought so too, but it ended up dominating my free time during my senior year of high school.
-It began as many good projects do &ndash; I was feeling a bit lazy. My high school&rsquo;s schedule changed frequently depending on the day of the week, and I rarely knew exactly when the bell was supposed to ring."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/project/mithril-selector/">
+  <meta property="og:title" content="mithril-selector | Nicolas Chan">
+  <meta property="og:description" content="Mithril select component with auto-complete as you type"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-05-25T20:00:51-07:00">
+  <meta property="article:published_time" content="2019-05-25T19:57:36-07:00">
   
-  <meta property="article:modified_time" content="2019-05-25T20:00:51-07:00">
-  
-
+  <meta property="article:modified_time" content="2019-05-25T19:57:36-07:00">
   
 
   
 
-  <title>Creating bell.plus | Nicolas Chan</title>
+  
+
+  <title>mithril-selector | Nicolas Chan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -340,7 +338,7 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -361,7 +359,7 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Creating bell.plus</h1>
+  <h1 itemprop="name">mithril-selector</h1>
 
   
 
@@ -370,8 +368,8 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
 
 
 
-<meta content="2019-05-25 20:00:51 -0700 PDT" itemprop="datePublished">
-<meta content="2019-05-25 20:00:51 -0700 PDT" itemprop="dateModified">
+<meta content="2019-05-25 19:57:36 -0700 PDT" itemprop="datePublished">
+<meta content="2019-05-25 19:57:36 -0700 PDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -390,11 +388,6 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
 
   
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
   
 
   
@@ -463,6 +456,41 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
 
 
 
+<div class="btn-links mb-3">
+  
+  <a class="btn btn-outline-primary my-1" href="https://github.com/nicolaschan/mithril-selector" target="_blank" rel="noopener">Go to Project Site</a>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -473,100 +501,12 @@ It began as many good projects do &ndash; I was feeling a bit lazy. My high scho
 
     <div class="article-style" itemprop="articleBody">
       
-
-<p>You&rsquo;d think a countdown timer to the end of class would be an easy one-day
-project. I thought so too, but it ended up dominating my free time during
-my senior year of high school.</p>
-
-<p>It began as many good projects do &ndash; I was feeling a bit lazy. My high
-school&rsquo;s schedule changed frequently depending on the day of the week,
-and I rarely knew exactly when the bell was supposed to ring. Rather
-than wait for the oh-so-slow school website to load to look up the
-schedule, I decided to make a website to do the work for me. Having
-recently implemented a policy of providing Chromebooks to all students,
-my high school was the perfect place for a project like this to take off,
-although I didn&rsquo;t realize it at the time.</p>
-
-<p><img src="img/bell-screenshot.png" alt="" /></p>
-
-<h1 id="what-s-so-hard-about-this">What&rsquo;s so hard about this?</h1>
-
-<p>It&rsquo;s just a timer, right?</p>
-
-<h2 id="dealing-with-special-schedules">Dealing with Special Schedules</h2>
-
-<p>Well, a timer needs to know when the end time is, and this was simple enough
-to hard-code. But as time went on and I started encountering special schedules,
-I decided to go a bit overboard and write a parser
-for my own format for specifying school schedules and calendars. Later on,
-this would pay off when I wanted to quickly add support for additional
-schools. It also features a way to enter custom schedules if your
-school isn&rsquo;t supported.</p>
-
-<h2 id="precise-timing">Precise Timing</h2>
-
-<p>I suppose I was also a bit of a perfectionist, wanting it to tick over to
-the next period <em>exactly</em> when the bell rings. On devices where the system
-time might be slightly incorrect, this required time synchronization with
-the server. This revealed to me that even the <em>school&rsquo;s</em> time was wrong and
-would even vary depending on the day. I hacked together a Telegram bot I could
-send messages to like <code>bell add 1000</code> to push the website 1000 ms forward
-to match the school.</p>
-
-<h2 id="feature-creep">Feature Creep</h2>
-
-<p>Inevitably, people want more features. I added support for custom themes
-in a way that would make it easy to implement new ones while still
-being extensible enough to support things such as a special snow effect
-during winter break.</p>
-
-<h2 id="acknowledgements">Acknowledgements</h2>
-
-<p>Jonathan Shi contributed by creating <a href="https://bell.plus/xt" target="_blank">the Chrome
-extension</a> as part of his senior project in high school.</p>
-
-<p>After I went off to college, Jamsheed Mistri helped to keep the schedules
-updated and we worked together on creating some stickers to promote the website.</p>
-
-<h1 id="analytics">Analytics</h1>
-
-<p>What I thought would be a useful tool for myself quickly became popular at
-the school, and was even requested at other schools. Feedback from from a
-survey I sent out was overwhelmingly positive (1 = Not useful at all, 5 = Extremely useful):</p>
-
-<p><img src="img/bell-survey.png" alt="" /></p>
-
-<p>After starting college and no longer being on the ground seeing it being used
-in high school, I wanted to keep an eye on the usage. I created my own analytics
-stack to avoid dependence on any external services. I put my newly learned SQL
-programming skills to use when setting up <a href="https://bell.plus/stats" target="_blank">the stats page</a>
-using <a href="https://metabase.com" target="_blank">Metabase</a>.</p>
-
-<p><img src="img/bell-stats.png" alt="" /></p>
-
-<p>The <a href="https://bell.plus/stats" target="_blank">public stats page</a> includes many more charts of the
-data collected, including usage by school and over the course of a day.</p>
-
-<h1 id="conclusions">Conclusions</h1>
-
-<p>Creating bell.plus has been one of the greatest learning experiences for me, because I was
-ultimately responsible for setting it up and making sure everything continued
-working well. From programming the front and backends, maintaining uptime with Docker
-swarm, and performing analysis on the usage information, it has required me to
-attain at least a working familiarity with all parts of the software deployment process.
-If you&rsquo;re interested in the specific technologies I&rsquo;ve used, bell.plus is <a href="https://github.com/nicolaschan/bell" target="_blank">open source and
-available on GitHub</a>.
-Its usefulness to other students at my former high school continues to humble me and
-encourage me to keep it going strong for the years to come.</p>
-
     </div>
 
     
 
 
-
     
-      
 
 
 
@@ -632,17 +572,26 @@ encourage me to keep it going strong for the years to come.</p>
 
 
 
-      
-      
+
+    
     
 
     
-
+    
     
 
+    
+    
+    
+
+    
+    
+    
 
   </div>
 </article>
+
+
 
 <div class="container">
   <footer class="site-footer">

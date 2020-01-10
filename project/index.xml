@@ -12,12 +12,48 @@
     
     
     <item>
+      <title>ip-anonymize</title>
+      <link>/project/ip-anonymize/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/ip-anonymize/</guid>
+      <description>Anonymize IP addresses, works with IPv4 and IPv6</description>
+    </item>
+    
+    <item>
+      <title>minecraft-backup</title>
+      <link>/project/minecraft-backup/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/minecraft-backup/</guid>
+      <description>Backup script for Minecraft servers on Linux</description>
+    </item>
+    
+    <item>
       <title>mines</title>
       <link>/project/mines/</link>
       <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
       
       <guid>/project/mines/</guid>
       <description>Multiplayer minesweeper in your web browser</description>
+    </item>
+    
+    <item>
+      <title>mithril-selector</title>
+      <link>/project/mithril-selector/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/mithril-selector/</guid>
+      <description>Mithril select component with auto-complete as you type</description>
+    </item>
+    
+    <item>
+      <title>slurm-banking-plugins</title>
+      <link>/project/slurm-banking-plugins/</link>
+      <pubDate>Sat, 25 May 2019 19:57:36 -0700</pubDate>
+      
+      <guid>/project/slurm-banking-plugins/</guid>
+      <description>Slurm plugins to manage supercomputer account usage</description>
     </item>
     
     <item>

@@ -10,7 +10,6 @@
   <url>
     <loc>/</loc>
     <lastmod>2019-05-25T20:00:51-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -19,13 +18,32 @@
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/project/ip-anonymize/</loc>
     <lastmod>2019-05-25T19:57:36-07:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/minecraft-backup/</loc>
+    <lastmod>2019-05-25T19:57:36-07:00</lastmod>
   </url>
   
   <url>
     <loc>/project/mines/</loc>
+    <lastmod>2019-05-25T19:57:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/mithril-selector/</loc>
+    <lastmod>2019-05-25T19:57:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-05-25T19:57:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/slurm-banking-plugins/</loc>
     <lastmod>2019-05-25T19:57:36-07:00</lastmod>
   </url>
   
@@ -45,17 +63,14 @@
   
   <url>
     <loc>/authors/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -68,7 +83,6 @@
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
